@@ -1,0 +1,83 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Caslon Display', serif;
+    background: url(dark-grey-home-office2.jpg);
+    background-size: cover;
+}
+
+/*The whole login context*/
+.box {
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50px, -50px);
+    color: floralwhite;
+    text-align: center;
+}
+    /*The 'login' text only*/
+    .box h1 {
+        float: left;
+        color: whitesmoke;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        border-bottom: 6px double darkred;
+        margin-left: -90px;
+        margin-top: -150px;
+        padding: 5px;
+        
+    }
+
+    .box input[type="text"],.box input[type="password"] 
+    {
+        border: 0;
+        background: none;
+        display: block;
+        margin-left: -150px;
+        margin-top: -60px;
+        margin-bottom: 80px;
+        text-align: center;
+        border: 3px solid whitesmoke;
+        padding: 15px 20px;
+        width: 240px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: ease-in;
+    }
+
+/*to enlarge the password when typing*/
+    .box input[type="text"]:focus, .box input[type="password"]:focus
+    {
+        width: 270px;
+        border-color: darkred;
+    }
+        
+/*The submit button*/
+    .box input[type="submit"] {
+        border: 0;
+        background: none;
+        display: block;
+        margin-left: -77px;
+        margin-top: -40px;
+        text-align: center;
+        border: 3px solid darkred;
+        padding: 14px 35px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: ease-in;
+        cursor: pointer;
+    }
+
+    .box input[type="submit"]:hover
+    {
+        background: brown;
+    }
+
